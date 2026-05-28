@@ -1,0 +1,54 @@
+local terminal    = "ghostty"
+local fileManager = "nautilus"
+local menu        = "wofi --show drun"
+local firefox     = "firefox"
+
+local mainMod = "SUPER"
+local mainMod1 = "SUPER + SHIFT"
+hl.bind(mainMod .. " + Q", hl.dsp.window.close())
+
+hl.bind(mainMod .. " + SHIFT + L",hl.dsp.exec_cmd("hyprshutdown"))
+hl.bind(mainMod .. " + SHIFT + P",hl.dsp.exec_cmd("systemctl poweroff"))
+hl.bind(mainMod .. " + SHIFT + R",hl.dsp.exec_cmd("systemctl reboot"))
+hl.bind(mainMod .. " + SHIFT + K",hl.dsp.exec_cmd("hyprlock"))
+
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(menu))
+hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("nautilus -w"))
+hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
+hl.bind(mainMod .. " + D", hl.dsp.exec_cmd('hyprpwcenter'))
+hl.bind(mainMod .. " + O", hl.dsp.exec_cmd('bash -c \'file="/home/koen/Pictures/Screenshots/$(date +%F_%H-%M-%S).png"; grim -g "$(slurp -d)" "$file" && wl-copy < "$file"\''))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(firefox))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen{})
+hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + T", hl.dsp.layout("togglesplit"))    -- dwindle only
+
+hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("/home/koen/.config/wofi/img.sh"))
+
+hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
+hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
+
+hl.bind(mainMod .. " + semicolon", hl.dsp.window.resize({ x = -50, y = 0, relative = true}), {repeating = true })
+hl.bind(mainMod .. " + apostrophe", hl.dsp.window.resize({ x = 50, y = 0, relative = true}), {repeating = true })
+hl.bind(mainMod .. " + bracketleft", hl.dsp.window.resize({ x = 0, y = -50, relative = true}), {repeating = true })
+hl.bind(mainMod .. " + slash", hl.dsp.window.resize({ x = 0, y = 50, relative = true}), {repeating = true })
+
+hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
+hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+
+
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),      { locked = true, repeating = true })
+hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),     { locked = true, repeating = true })
+hl.bind("XF86AudioMicMute",     hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),   { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessUp",  hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"),                  { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"),                  { locked = true, repeating = true })
+
+hl.bind(mainMod1 .. " + X", hl.dsp.exec_cmd("sh -c 'playerctl play-pause'"))
+hl.bind(mainMod1 .. " + Z", hl.dsp.exec_cmd("sh -c 'playerctl previous'"))
+hl.bind(mainMod1 .. " + C", hl.dsp.exec_cmd("sh -c 'playerctl next'"))
+
+hl.bind(mainMod1 .. " + S", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
+hl.bind(mainMod1 .. " + A", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),      { locked = true, repeating = true })
+hl.bind(mainMod1 .. " + D", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),     { locked = true, repeating = true })

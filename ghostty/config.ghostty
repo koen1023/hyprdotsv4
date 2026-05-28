@@ -1,0 +1,41 @@
+cursor-style = bar
+cursor-color = #00d1ff
+
+# ─────────────────────────────
+# THEME (matches Hyprland + wofi vibe)
+# ─────────────────────────────
+
+
+# fallback if theme missing accent consistency
+background = #0a0a0a
+foreground = #e6e6e6
+cursor-color = #00d1ff
+
+# ─────────────────────────────
+# TRANSPARENCY / GLASS LOOK
+# ─────────────────────────────
+background-opacity = 0.75
+
+# ─────────────────────────────
+# FONT (clean UI matching waybar/wofi setups)
+# ─────────────────────────────
+font-family = JetBrainsMono Nerd Font
+font-size = 12
+
+
+# ─────────────────────────────
+# BEHAVIOR (clean terminal UX)
+# ─────────────────────────────
+mouse-hide-while-typing = true
+scrollback-limit = 100000
+
+# ─────────────────────────────
+# HYPRLAND INTEGRATION VIBE
+# ─────────────────────────────
+shell-integration-features = ssh-env,ssh-terminfo
+
+# ─────────────────────────────
+# OPTIONAL: quick terminal feel
+# ─────────────────────────────
+quick-terminal-position = top
+quick-terminal-size = 40%,70%

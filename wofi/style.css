@@ -1,0 +1,89 @@
+window {
+    background-color: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 18px;
+}
+
+#outer-box {
+background-color: rgba(20, 20, 20, 0.85);
+border-radius: 18px;
+padding: 14px;
+}
+
+#input {
+background-color: rgba(0, 0, 0, 0.45);
+color: #ffffff;
+
+border: 1px solid rgba(255, 255, 255, 0.20);
+border-radius: 12px;
+
+padding: 10px;
+margin: 10px 10px 10px 10px;
+
+box-shadow: none;
+}
+
+#scroll {
+background-color: transparent;
+padding: 6px;
+}
+
+#entry {
+background-color: transparent;
+
+margin: 5px 6px;
+padding: 12px 14px;
+
+border-radius: 12px;
+
+color: #ffffff;
+
+spacing: 12px;
+
+border: 1px solid transparent;
+}
+
+#entry:hover {
+background-color: rgba(255, 255, 255, 0.05);
+}
+
+#text,
+label {
+    color: #ffffff;
+}
+
+#entry:selected,
+#entry:selected:focus {
+background-color: transparent;
+border: none;
+outline: none;
+box-shadow: none;
+}
+
+#entry:selected #text,
+#entry:selected label {
+color: #00d1ff;
+font-weight: bold;
+}
+
+#entry:focus {
+outline: none;
+border: none;
+box-shadow: none;
+}
+
+#entry:selected * {
+outline: none;
+border: none;
+box-shadow: none;
+}
+
+#img {
+margin-right: 12px;
+min-width: 22px;
+min-height: 22px;
+}
+
+* {
+    outline: none;
+}
