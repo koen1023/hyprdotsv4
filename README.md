@@ -76,7 +76,7 @@ Super + F = fullscreen
 
 Super + A = filemanager
 
-Super + S = hyprlauncher
+Super + S = wofi application launcher
 
 Super + D = hyprpwcenter
 
@@ -90,7 +90,7 @@ Super + Shift + Z - X - C = Previous - Play pause - Next
 
 Super + O = Screenshot ([You need a Screenshot directory in /home/"user"/Pictures/ for grim to also save your screenshot there]after taking one it is copied to your clipboard automatically)
 
-Super + H = Clipboard (need to xchmod +x the img.sh found in the wofi directory)
+Super + H = Clipboard
 
 Super + Shift + R = restart system
 
