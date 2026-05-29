@@ -29,14 +29,18 @@ hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
-hl.bind(mainMod .. " + semicolon", hl.dsp.window.resize({ x = -50, y = 0, relative = true}), {repeating = true })
-hl.bind(mainMod .. " + apostrophe", hl.dsp.window.resize({ x = 50, y = 0, relative = true}), {repeating = true })
-hl.bind(mainMod .. " + bracketleft", hl.dsp.window.resize({ x = 0, y = -50, relative = true}), {repeating = true })
-hl.bind(mainMod .. " + slash", hl.dsp.window.resize({ x = 0, y = 50, relative = true}), {repeating = true })
+hl.bind(mainMod .. " + semicolon", hl.dsp.window.swap({ direction = "l" }))
+hl.bind(mainMod .. " + apostrophe", hl.dsp.window.swap({ direction = "r" }))
+hl.bind(mainMod .. " + bracketleft", hl.dsp.window.swap({ direction = "u" }))
+hl.bind(mainMod .. " + slash", hl.dsp.window.swap({ direction = "d" }))
+
+hl.bind(mainMod .. " + SHIFT + semicolon", hl.dsp.window.resize({ x = -50, y = 0, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + apostrophe", hl.dsp.window.resize({ x = 50, y = 0, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + bracketleft", hl.dsp.window.resize({ x = 0, y = -50, relative = true }), { repeating = true })
+hl.bind(mainMod .. " + SHIFT + slash", hl.dsp.window.resize({ x = 0, y = 50, relative = true }), { repeating = true })
 
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
-
 
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),      { locked = true, repeating = true })
