@@ -80,15 +80,9 @@ Super + S = hyprlauncher
 
 Super + D = hyprpwcenter
 
-Super + ; - / - [ - ' = resize windows with keyboard
+Super + ; - / - [ - ' = swap windows (hhkb arrow diamond)
 
-Super + Shift + R = restart system
-
-Super + Shift + P = poweroff system
-
-Super + Shift + L = log out
-
-Super + Shift + K = lock system
+Super + Shift + ; - / - [ - ' = resize windows (hhkb arrow diamond)
 
 Super + Shift + A - S - D = Volume down - Volume Up - Mute
 
@@ -97,6 +91,14 @@ Super + Shift + Z - X - C = Previous - Play pause - Next
 Super + O = Screenshot ([You need a Screenshot directory in /home/"user"/Pictures/ for grim to also save your screenshot there]after taking one it is copied to your clipboard automatically)
 
 Super + H = Clipboard (need to xchmod +x the img.sh found in the wofi directory)
+
+Super + Shift + R = restart system
+
+Super + Shift + P = poweroff system
+
+Super + Shift + L = log out
+
+Super + Shift + K = lock system
 
 Note: Hypridle is configured to show a lock screen with hyprlock after 5min of inactivity and 2.5min later your monitors turn off, after 10min of inactivity your system suspends
 
