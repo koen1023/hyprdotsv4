@@ -24,15 +24,15 @@ hl.bind(mainMod .. " + T", hl.dsp.layout("togglesplit"))    -- dwindle only
 
 hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("/home/koen/.config/wofi/img.sh"))
 
-hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
+hl.bind(mainMod .. " + semicolon",  hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + apostrophe", hl.dsp.focus({ direction = "right" }))
+hl.bind(mainMod .. " + bracketleft",    hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + slash",  hl.dsp.focus({ direction = "down" }))
 
-hl.bind(mainMod .. " + semicolon", hl.dsp.window.swap({ direction = "l" }))
-hl.bind(mainMod .. " + apostrophe", hl.dsp.window.swap({ direction = "r" }))
-hl.bind(mainMod .. " + bracketleft", hl.dsp.window.swap({ direction = "u" }))
-hl.bind(mainMod .. " + slash", hl.dsp.window.swap({ direction = "d" }))
+hl.bind(mainMod .. " + left", hl.dsp.window.swap({ direction = "l" }))
+hl.bind(mainMod .. " + right", hl.dsp.window.swap({ direction = "r" }))
+hl.bind(mainMod .. " + up", hl.dsp.window.swap({ direction = "u" }))
+hl.bind(mainMod .. " + down", hl.dsp.window.swap({ direction = "d" }))
 
 hl.bind(mainMod .. " + SHIFT + semicolon", hl.dsp.window.resize({ x = -50, y = 0, relative = true }), { repeating = true })
 hl.bind(mainMod .. " + SHIFT + apostrophe", hl.dsp.window.resize({ x = 50, y = 0, relative = true }), { repeating = true })

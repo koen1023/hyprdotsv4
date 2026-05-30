@@ -12,6 +12,8 @@ Technically you can still move any running discord or firefox instance to anothe
 
 I did the same to always spawn steam on workspace 8 but that workspace behaves just like a normal workspace
 
+The keybinds are meant to work really well for HHKB layouts
+
 Instructions
 
 These dots require a Hyprland version that supports the new Lua standard.
