@@ -94,13 +94,13 @@ Super + O = Screenshot ([You need a Screenshot directory in /home/"user"/Picture
 
 Super + H = Clipboard
 
-Super + Shift + R = restart system
+Super + Shift + CTRL + R = restart system
 
-Super + Shift + P = poweroff system
+Super + Shift + CTRL  + P = poweroff system
 
-Super + Shift + L = log out
+Super + Shift + CTRL  + L = log out
 
-Super + Shift + K = lock system
+Super + Shift + CTRL  + K = lock system
 
 Note: Hypridle is configured to show a lock screen with hyprlock after 5min of inactivity and 2.5min later your monitors turn off, after 10min of inactivity your system suspends
 
