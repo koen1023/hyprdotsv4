@@ -29,7 +29,6 @@ background-color: transparent;
 padding: 6px;
 }
 
-/* BASE ENTRY */
 #entry {
 background-color: transparent;
 margin: 5px 6px;
@@ -42,7 +41,6 @@ color: #45465a;
 font-weight: normal;
 }
 
-/* SELECTED STATE = visually identical to base (no highlight at all) */
 #entry:selected,
 #entry:selected:focus {
 background-color: transparent;
@@ -55,13 +53,11 @@ font-weight: normal;
 box-shadow: none;
 }
 
-/* hover can still exist if you want feedback */
 #entry:hover {
 background-color: rgba(192, 208, 225, 0.04);
 color: #c0d0e1;
 }
 
-/* text colors */
 #text,
 label {
     color: #45465a;
@@ -72,7 +68,6 @@ label {
 color: #c0d0e1;
 }
 
-/* icon stability */
 #img {
 margin-right: 12px;
 min-width: 22px;
