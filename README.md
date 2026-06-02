@@ -106,8 +106,6 @@ Super + Shift + CTRL  + K = lock system
 
 Note: The keybinds are designed after the HKKB layout, specifically the keybinds to manipulate windows
 
-Note: Hypridle is configured to show a lock screen with hyprlock after 5min of inactivity and 2.5min later your monitors turn off, after 10min of inactivity your system suspends
-
 If you got all of those packages installed and changed your monitor/wallpaper settings in the configs that should be everything :)
 
 I don't intend to add much to this config but i will probably maintain it...maybe...i dont know yet :)
