@@ -1,7 +1,7 @@
 local terminal    = "ghostty"
 local fileManager = "nautilus"
 local menu        = "wofi --show drun"
-local firefox     = "firefox"
+local browser = "firefox"
 
 local mainMod = "SUPER"
 local mainMod1 = "SUPER + SHIFT"
@@ -16,11 +16,12 @@ hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("nautilus -w"))
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd('hyprpwcenter'))
-hl.bind(mainMod .. " + O", hl.dsp.exec_cmd('bash -c \'file="/home/koen/Pictures/Screenshots/$(date +%F_%H-%M-%S).png"; grim -g "$(slurp -d)" "$file" && wl-copy < "$file"\''))
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(firefox))
+hl.bind(mainMod .. " + I", hl.dsp.exec_cmd('bash -c \'file="/home/koen/Pictures/Screenshots/$(date +%F_%H-%M-%S).png"; grim -g "$(slurp -d)" "$file" && wl-copy < "$file"\''))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen{})
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + T", hl.dsp.layout("togglesplit"))    -- dwindle only
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("hyprpicker --autocopy"))
 
 hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("/home/koen/.config/wofi/img.sh"))
 
@@ -39,8 +40,7 @@ hl.bind(mainMod .. " + SHIFT + apostrophe", hl.dsp.window.resize({ x = 50, y = 0
 hl.bind(mainMod .. " + SHIFT + bracketleft", hl.dsp.window.resize({ x = 0, y = -50, relative = true }), { repeating = true })
 hl.bind(mainMod .. " + SHIFT + slash", hl.dsp.window.resize({ x = 0, y = 50, relative = true }), { repeating = true })
 
-hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
-hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+hl.bind(mainMod .. " + mouse:273", hl.dsp.window.drag(), { mouse = true })
 
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),      { locked = true, repeating = true })

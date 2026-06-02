@@ -20,32 +20,24 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name  = "move-hyprland-run",
-    match = { class = "hyprland-run" },
-
-    move  = "20 monitor_h-120",
-    float = true,
-})
-
-hl.window_rule({
     match = {
         class = "firefox"
     },
-    workspace = "9",
+    workspace = "6",
 })
 
 hl.window_rule({
     match = {
         class = "discord"
     },
-    workspace = "9",
+    workspace = "6",
 })
 
 hl.window_rule({
     match = {
         class = "steam"
     },
-    workspace = "8 silent",
+    workspace = "5 silent",
     monitor = "DP-1",
 })
 

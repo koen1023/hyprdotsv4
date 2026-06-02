@@ -4,25 +4,16 @@ local mainMod = "SUPER"
 
 hl.config({
     workspace = {
-        "1, monitor:DP-1, default:true",
-        "2, monitor:DP-1, default:true",
-        "3, monitor:DP-1, default:true",
-        "4, monitor:DP-1, default:true",
-        "5, monitor:DP-1, default:true",
-        "6, monitor:DP-1, default:true",
-        "7, monitor:DP-1, default:true",
-        "8, monitor:DP-1, default:true",
-        "9, monitor:DP-2, persistent:true, default:true",
+        "1, monitor:DP-1",
+        "2, monitor:DP-1",
+        "3, monitor:DP-1",
+        "4, monitor:DP-1",
+        "5, monitor:DP-1",
+        "6, monitor:DP-2, persistent:true",
     }
 })
 
-hl.workspace_rule({
-    workspace = "9",
-    monitor   = "DP-2",
-    persistent = true,
-})
-
-for i = 1, 9 do
+for i = 1, 6 do
     local key = i
 
     hl.bind(mainMod .. " + " .. key,
@@ -39,3 +30,16 @@ for i = 1, 9 do
             fullscreen_on_one_column = true,
         },
     })
+
+
+hl.workspace_rule({
+        workspace = "6",
+        monitor = "DP-2",
+})
+
+for i = 1, 5 do
+    hl.workspace_rule({
+        workspace = tostring(i),
+                      monitor = "DP-1",
+    })
+    end

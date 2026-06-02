@@ -1,13 +1,13 @@
 hl.config({
     general = {
-        gaps_in  = 2,
-        gaps_out = 2,
+        gaps_in  = 1,
+        gaps_out = 0,
 
         border_size = 2,
 
         col = {
-            active_border = "rgb(0,209,255)",
-          inactive_border = "rgb(79,79,79)",
+            active_border = "#c0d0e1",
+          inactive_border = "#090a11",
         },
 
         resize_on_border = true,
@@ -18,7 +18,7 @@ hl.config({
     },
 
     decoration = {
-        rounding       = 5,
+        rounding       = 3,
         rounding_power = 2,
 
         active_opacity   = 1.0,
@@ -33,7 +33,7 @@ hl.config({
 
         blur = {
             enabled   = true,
-            size      = 3,
+            size      = 5,
             passes    = 1,
             vibrancy  = 0.1696,
         },
@@ -75,3 +75,21 @@ hl.config({
         preserve_split = true, -- You probably want this
     },
 })
+
+hl.window_rule({
+    match = { class = "firefox" },
+    opacity = "1.0 override 1.0 override",
+})
+
+hl.window_rule({
+    match = { class = "discord" },
+    opacity = "1.0 override 1.0 override",
+})
+
+
+hl.window_rule({
+    match = { class = "steam" },
+    opacity = "1.0 override 1.0 override",
+})
+
+

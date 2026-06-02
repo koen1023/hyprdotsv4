@@ -1,33 +1,45 @@
+* {
+outline: none;
+}
+
+/* keep window clean */
 window {
-    background-color: rgba(0, 0, 0, 0.35);
-    border: 1px solid rgba(255, 255, 255, 0.20);
+    background-color: rgba(9, 10, 17, 0.92);
+    border: none;
     border-radius: 18px;
 }
 
+/* THIS is the real visible frame */
 #outer-box {
-background-color: rgba(20, 20, 20, 0.85);
+background-color: rgba(9, 10, 17, 0.98);
+
+border: 2px solid rgba(192, 208, 225, 0.30);
 border-radius: 18px;
+
 padding: 14px;
 }
 
+/* input */
 #input {
-background-color: rgba(0, 0, 0, 0.45);
-color: #ffffff;
+background-color: rgba(0, 0, 0, 0.35);
+color: #c0d0e1;
 
-border: 1px solid rgba(255, 255, 255, 0.20);
+border: 1px solid rgba(192, 208, 225, 0.10);
 border-radius: 12px;
 
 padding: 10px;
-margin: 10px 10px 10px 10px;
+margin: 10px;
 
-box-shadow: none;
+font-weight: normal;
 }
 
+/* scroll */
 #scroll {
 background-color: transparent;
 padding: 6px;
 }
 
+/* entries */
 #entry {
 background-color: transparent;
 
@@ -36,54 +48,45 @@ padding: 12px 14px;
 
 border-radius: 12px;
 
-color: #ffffff;
-
-spacing: 12px;
-
 border: 1px solid transparent;
+
+color: #45465a;
+font-weight: normal;
 }
 
+/* hover */
 #entry:hover {
-background-color: rgba(255, 255, 255, 0.05);
+background-color: rgba(192, 208, 225, 0.04);
+color: #c0d0e1;
 }
 
-#text,
-label {
-    color: #ffffff;
-}
-
+/* selected (NO growth, NO reflow) */
 #entry:selected,
 #entry:selected:focus {
-background-color: transparent;
-border: none;
-outline: none;
-box-shadow: none;
+background-color: rgba(192, 208, 225, 0.06);
+border: 1px solid rgba(192, 208, 225, 0.25);
+
+margin: 5px 6px;
+padding: 12px 14px;
+
+font-weight: normal;
 }
 
+/* text colors */
+#text,
+label {
+    color: #45465a;
+}
+
+/* selected text highlight */
 #entry:selected #text,
 #entry:selected label {
-color: #00d1ff;
-font-weight: bold;
+color: #c0d0e1;
 }
 
-#entry:focus {
-outline: none;
-border: none;
-box-shadow: none;
-}
-
-#entry:selected * {
-outline: none;
-border: none;
-box-shadow: none;
-}
-
+/* icon stability */
 #img {
 margin-right: 12px;
 min-width: 22px;
 min-height: 22px;
-}
-
-* {
-    outline: none;
 }

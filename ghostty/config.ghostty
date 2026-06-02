@@ -1,20 +1,7 @@
-cursor-style = bar
-cursor-color = #00d1ff
+background = #090a11
+foreground = #bfcfe0
 
-# fallback if theme missing accent consistency
-background = #0a0a0a
-foreground = #e6e6e6
-cursor-color = #00d1ff
+cursor-color = #bfcfe0
 
-background-opacity = 0.75
-
-font-family = JetBrainsMono Nerd Font
-font-size = 12
-
-mouse-hide-while-typing = true
-scrollback-limit = 100000
-
-shell-integration-features = ssh-env,ssh-terminfo
-
-quick-terminal-position = top
-quick-terminal-size = 40%,70%
+selection-background = #45465a
+selection-foreground = #bfcfe0

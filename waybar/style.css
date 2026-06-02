@@ -6,97 +6,35 @@ min-height: 30px;
 }
 
 window#waybar {
-  background: rgb(0,0,0);
+background: #090a11;
 }
 
 #workspaces button {
 background: transparent;
 border: none;
 box-shadow: none;
-color: #4f4f4f;
-padding: 0 6px;
+color: #45465a;
 }
 
 #workspaces button.active,
-#workspaces button.focused { color: #00d1ff; }
-
-#custom-logo {
-padding-left: 0px;
-padding-right: 3px;
-padding-top: 0.5px;
-color: #00d1ff;
-font-size: 20px;
-}
-
-.modules-left,
-.modules-center,
-.modules-right {
-  background: transparent;
-}
-
-#battery,
-#pulseaudio,
-#tray,
-#window,
-#workspaces,
-#clock {
-padding: 0 4 0 0px;
-}
+#workspaces button.focused { color: #c0d0e1; }
 
 #pulseaudio {
 padding-right: 10px;
-color: #00d1ff;
-}
-
-#pulseaudio.muted {
-padding-right: 18px;
-color: #ff2e00
-
+color: #c0d0e1;
 }
 
 #clock {
-color: #4f4f4f;
-margin-left: 0;
+color: #c0d0e1;
+padding-right: 5;
+padding-left: 7;
 }
 
 #custom-separator {
 padding-right: 5px;
-color: #4f4f4f;
-}
-
-#custom-separator2 {
-padding-right: 5px;
-color: #00d1ff;
+color: #c0d0e1;
 }
 
 #custom-clock_date {
-color: #00d1ff;
-padding-right: 5px;
-}
-
-#battery.charging {
-color: #ffffff;
-background-color: #26A65B;
-border-radius: 100px;
-}
-
-#battery.warning:not(.charging) {
-background-color: #ffbe61;
-color: black;
-border-radius: 100px;
-color: #4f4f4f;
-}
-
-#battery.critical:not(.charging) {
-background-color: #f53c3c;
-color: #ffffff;
-border-radius: 100px;
-animation: blink 0.5s linear infinite alternate;
-}
-
-@keyframes blink {
-  to {
-    background-color: #ffffff;
-    color: #000000;
-  }
+color: #c0d0e1;
 }
