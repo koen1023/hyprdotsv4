@@ -2,50 +2,38 @@
 outline: none;
 }
 
-/* keep window clean */
 window {
     background-color: rgba(9, 10, 17, 0.92);
     border: none;
     border-radius: 18px;
 }
 
-/* THIS is the real visible frame */
 #outer-box {
 background-color: rgba(9, 10, 17, 0.98);
-
 border: 2px solid rgba(192, 208, 225, 0.30);
 border-radius: 18px;
-
 padding: 14px;
 }
 
-/* input */
 #input {
 background-color: rgba(0, 0, 0, 0.35);
 color: #c0d0e1;
-
 border: 1px solid rgba(192, 208, 225, 0.10);
 border-radius: 12px;
-
 padding: 10px;
 margin: 10px;
-
-font-weight: normal;
 }
 
-/* scroll */
 #scroll {
 background-color: transparent;
 padding: 6px;
 }
 
-/* entries */
+/* BASE ENTRY */
 #entry {
 background-color: transparent;
-
 margin: 5px 6px;
 padding: 12px 14px;
-
 border-radius: 12px;
 
 border: 1px solid transparent;
@@ -54,22 +42,23 @@ color: #45465a;
 font-weight: normal;
 }
 
-/* hover */
-#entry:hover {
-background-color: rgba(192, 208, 225, 0.04);
-color: #c0d0e1;
-}
-
-/* selected (NO growth, NO reflow) */
+/* SELECTED STATE = visually identical to base (no highlight at all) */
 #entry:selected,
 #entry:selected:focus {
-background-color: rgba(192, 208, 225, 0.06);
-border: 1px solid rgba(192, 208, 225, 0.25);
+background-color: transparent;
+border: 1px solid transparent;
 
 margin: 5px 6px;
 padding: 12px 14px;
 
 font-weight: normal;
+box-shadow: none;
+}
+
+/* hover can still exist if you want feedback */
+#entry:hover {
+background-color: rgba(192, 208, 225, 0.04);
+color: #c0d0e1;
 }
 
 /* text colors */
@@ -78,7 +67,6 @@ label {
     color: #45465a;
 }
 
-/* selected text highlight */
 #entry:selected #text,
 #entry:selected label {
 color: #c0d0e1;
