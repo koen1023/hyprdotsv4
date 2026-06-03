@@ -16,18 +16,27 @@ box-shadow: none;
 color: #45465a;
 }
 
+#window {
+color: #c0d0e1;
+}
+
 #workspaces button.active,
 #workspaces button.focused { color: #c0d0e1; }
 
 #pulseaudio {
-padding-right: 10px;
+padding-right: 20px;
 color: #c0d0e1;
+}
+
+#pulseaudio.muted {
+padding-right: 20px;
+color: #E1C0C0;
 }
 
 #clock {
 color: #c0d0e1;
-padding-right: 5;
-padding-left: 13;
+padding-right: 5px;
+padding-left: 13px;
 }
 
 #custom-separator {
