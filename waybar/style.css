@@ -24,12 +24,12 @@ color: #c0d0e1;
 #workspaces button.focused { color: #c0d0e1; }
 
 #pulseaudio {
-padding-right: 20px;
+padding-right: 10px;
 color: #c0d0e1;
 }
 
 #pulseaudio.muted {
-padding-right: 20px;
+padding-right: 10px;
 color: #E1C0C0;
 }
 
