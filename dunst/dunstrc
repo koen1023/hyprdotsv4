@@ -1,6 +1,5 @@
 [global]
-    monitor = 0
-    follow = mouse
+    monitor = 1
     fullscreen = pushback
 
     width = 380
