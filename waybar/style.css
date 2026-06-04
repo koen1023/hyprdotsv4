@@ -26,6 +26,7 @@ color: #c0d0e1;
 #pulseaudio {
 padding-right: 10px;
 color: #c0d0e1;
+min-width: 30px;
 }
 
 #pulseaudio.muted {
