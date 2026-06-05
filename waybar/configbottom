@@ -53,7 +53,7 @@
 
   "pulseaudio": {
     "format": "󰓃 {volume}%",
-    "format-muted": "󰝟 muted",
+    "format-muted": "muted",
     "tooltip": false,
     "on-click": "hyprpwcenter"
   }
