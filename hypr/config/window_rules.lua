@@ -55,4 +55,18 @@ hl.window_rule({
     float = true,
 })
 
+hl.window_rule({
+    match = {
+        class = "imv"
+    },
+    float = true,
+})
+
+hl.window_rule({
+    match = {
+        class = "mpv"
+    },
+    float = true,
+})
+
 
