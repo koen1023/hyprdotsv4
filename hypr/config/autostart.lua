@@ -1,7 +1,7 @@
 hl.on("hyprland.start", function()
 hl.exec_cmd("pkill waybar; waybar -c /home/koen/.config/waybar/configtop -s /home/koen/.config/waybar/style.css &")
 hl.exec_cmd("pkill waybar; waybar -c /home/koen/.config/waybar/configbottom -s /home/koen/.config/waybar/style.css &")
-hl.exec_cmd("hyprpolkitagent")
+hl.exec_cmd("systemctl --user start hyprpolkitagent")
 hl.exec_cmd("hyprpaper")
 hl.exec_cmd("firefox")
 hl.exec_cmd("steam")

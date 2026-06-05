@@ -1,5 +1,5 @@
 local terminal    = "ghostty"
-local fileManager = "nautilus"
+local fileManager = "thunar"
 local menu        = "wofi --show drun"
 local browser = "firefox"
 
@@ -13,7 +13,7 @@ hl.bind(mainMod .. " + SHIFT + CTRL + R",hl.dsp.exec_cmd("systemctl reboot"))
 hl.bind(mainMod .. " + SHIFT + CTRL + K",hl.dsp.exec_cmd("hyprlock"))
 
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(menu))
-hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("nautilus -w"))
+hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd('hyprpwcenter'))
 hl.bind(mainMod .. " + I", hl.dsp.exec_cmd('bash -c \'file="/home/koen/Pictures/Screenshots/$(date +%F_%H-%M-%S).png"; grim -g "$(slurp -d)" "$file" && wl-copy < "$file"\''))

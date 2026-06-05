@@ -24,7 +24,7 @@ Packages you will need:
 
 ghostty
 
-nautilus
+thunar
 
 dunst
 
