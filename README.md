@@ -56,9 +56,11 @@ wl-clipboard
 
 wofi
 
-JetBrainsMonoNerd Font
+papirus-icon-theme
 
-nwg-look (dark theme ^^)
+ttf-jetbrains-mono-nerd
+
+nwg-look (I use catppuccin-gtk-theme-git from the AUR and set the font to JetBrainsMonoNerd Font Regular and the papirus icon theme)
 
 (i hope i didnt forget anything)
 
