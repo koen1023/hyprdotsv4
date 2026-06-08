@@ -28,6 +28,8 @@ thunar
 
 dunst
 
+hyprshutdown
+
 hyprpolkitagent
 
 hyprpaper (you will need to edit the hyprpaper config file for your wallpaper to work)
