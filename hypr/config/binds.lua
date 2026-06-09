@@ -1,4 +1,4 @@
-local terminal    = "ghostty"
+local terminal    = "kitty"
 local fileManager = "thunar"
 local menu        = "wofi --show drun"
 local browser = "firefox"

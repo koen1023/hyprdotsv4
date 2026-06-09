@@ -22,7 +22,7 @@ Please make a backup of your existing config :)
 
 Packages you will need:
 
-ghostty
+kitty
 
 thunar
 
