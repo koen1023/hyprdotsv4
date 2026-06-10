@@ -55,6 +55,6 @@
     "format": "󰓃 {volume}%",
     "format-muted": "muted",
     "tooltip": false,
-    "on-click": "hyprpwcenter"
+    "on-click": "pavucontrol"
   }
 }

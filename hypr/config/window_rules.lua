@@ -43,7 +43,7 @@ hl.window_rule({
 
 hl.window_rule({
     match = {
-        class = "hyprpwcenter"
+        class = "org.pulseaudio.pavucontrol"
     },
     float = true,
 })

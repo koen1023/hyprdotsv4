@@ -34,7 +34,7 @@ hyprpolkitagent
 
 hyprpaper (you will need to edit the hyprpaper config file for your wallpaper to work)
 
-hyprpwcenter (access by clicking the volume icon on the waybar)
+pavucontrol (access by clicking the volume icon on the waybar)
 
 hypridle
 
