@@ -46,6 +46,7 @@ hl.window_rule({
         class = "org.pulseaudio.pavucontrol"
     },
     float = true,
+    size = "1200 600",
 })
 
 hl.window_rule({
