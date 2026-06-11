@@ -16,14 +16,14 @@ hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd('pavucontrol'))
-hl.bind(mainMod .. " + I", hl.dsp.exec_cmd('bash -c \'file="/home/koen/Pictures/Screenshots/$(date +%F_%H-%M-%S).png"; grim -g "$(slurp -d)" "$file" && wl-copy < "$file"\''))
+hl.bind(mainMod .. " + I", hl.dsp.exec_cmd('bash -c \'file="/home/koen/Pictures/Screenshots/$(date +%F_%H-%M-%S).png"; grim -g "$(slurp -d)" "$file" && cat "$file" | wl-copy --type image/png\''))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen{})
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + T", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("hyprpicker --autocopy"))
 
-hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("/home/koen/.config/wofi/img.sh"))
+hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("cliphist list | wofi -dmenu | cut -d' ' -f1 | cliphist decode | wl-copy"))
 
 hl.bind(mainMod .. " + semicolon",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + apostrophe", hl.dsp.focus({ direction = "right" }))

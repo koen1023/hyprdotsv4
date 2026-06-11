@@ -52,8 +52,6 @@ grim
 
 cliphist
 
-wl-copy
-
 wl-clipboard
 
 wofi
