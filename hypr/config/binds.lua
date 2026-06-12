@@ -8,7 +8,7 @@ local mainMod1 = "SUPER + SHIFT"
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 
 hl.bind(mainMod .. " + SHIFT + CTRL + L",hl.dsp.exec_cmd("hyprshutdown"))
-hl.bind(mainMod .. " + SHIFT + CTRL + P",hl.dsp.exec_cmd("systemctl poweroff"))
+hl.bind(mainMod .. " + SHIFT + CTRL + P",hl.dsp.exec_cmd("systemclt poweroff"))
 hl.bind(mainMod .. " + SHIFT + CTRL + R",hl.dsp.exec_cmd("systemctl reboot"))
 hl.bind(mainMod .. " + SHIFT + CTRL + K",hl.dsp.exec_cmd("hyprlock"))
 
@@ -18,7 +18,7 @@ hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd('pavucontrol'))
 hl.bind(mainMod .. " + I", hl.dsp.exec_cmd('bash -c \'file="/home/koen/Pictures/Screenshots/$(date +%F_%H-%M-%S).png"; grim -g "$(slurp -d)" "$file" && cat "$file" | wl-copy --type image/png\''))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
-hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen{})
+hl.bind(mainMod .. " + Tab", hl.dsp.window.fullscreen{})
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + T", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("hyprpicker --autocopy"))

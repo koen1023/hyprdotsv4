@@ -76,7 +76,7 @@ Super + Shift + 1-6 = move active window to workspace
 
 Super + 'arrow keys' = switch focus
 
-Super + F = fullscreen
+Super + Tab = fullscreen
 
 Super + A = filemanager
 
