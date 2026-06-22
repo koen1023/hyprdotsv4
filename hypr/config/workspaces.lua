@@ -33,8 +33,9 @@ for i = 1, 6 do
 
 
 hl.workspace_rule({
-        workspace = "6",
-        monitor = "DP-2",
+    workspace = "6",
+    monitor = "DP-2",
+
 })
 
 for i = 1, 5 do

@@ -8,7 +8,7 @@ local mainMod1 = "SUPER + SHIFT"
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 
 hl.bind(mainMod .. " + SHIFT + CTRL + L",hl.dsp.exec_cmd("hyprshutdown"))
-hl.bind(mainMod .. " + SHIFT + CTRL + P",hl.dsp.exec_cmd("systemclt poweroff"))
+hl.bind(mainMod .. " + SHIFT + CTRL + P",hl.dsp.exec_cmd("systemctl poweroff"))
 hl.bind(mainMod .. " + SHIFT + CTRL + R",hl.dsp.exec_cmd("systemctl reboot"))
 hl.bind(mainMod .. " + SHIFT + CTRL + K",hl.dsp.exec_cmd("hyprlock"))
 
