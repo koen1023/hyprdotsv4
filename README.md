@@ -1,6 +1,6 @@
-Philosophy
-
 I tried to keep it as minimal and functional as possible whilst making it usable without "missing" any crucial functions to use your computer normally
+
+little scuffed explanation video i made in like 20min (https://youtu.be/6uS9uEoSNF4)
 
 I am not a programmer nor a hyprland expert but i spent a lot of time trying to make the configs as readable as possible to make it easy to modify.
 
@@ -70,7 +70,7 @@ Super + 1-6 = switch workspace
 
 Super + Shift + 1-6 = move active window to workspace
 
-Super + 'arrow keys' = switch focus
+Super + 'arrow keys' = move windows around in tiling
 
 Super + Tab = fullscreen
 
@@ -80,7 +80,7 @@ Super + S = wofi application launcher
 
 Super + D = hyprpwcenter
 
-Super + ; - / - [ - ' = swap windows (hhkb arrow diamond)
+Super + ; - / - [ - ' = move focus (hhkb arrow diamond)
 
 Super + Shift + ; - / - [ - ' = resize windows (hhkb arrow diamond)
 
