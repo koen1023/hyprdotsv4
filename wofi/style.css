@@ -5,13 +5,13 @@ outline: none;
 window {
     background-color: rgba(9, 10, 17, 0.92);
     border: none;
-    border-radius: 18px;
+    border-radius: 5px;
 }
 
 #outer-box {
 background-color: rgba(9, 10, 17, 0.98);
 border: 2px solid rgba(192, 208, 225, 0.30);
-border-radius: 18px;
+border-radius: 5px;
 padding: 14px;
 }
 
