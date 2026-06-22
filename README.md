@@ -4,11 +4,7 @@ I tried to keep it as minimal and functional as possible whilst making it usable
 
 I am not a programmer nor a hyprland expert but i spent a lot of time trying to make the configs as readable as possible to make it easy to modify.
 
-Note: I have workspace 6 fixed to my second monitor as well as setting windowrules for Discord and Firefox to only spawn there as well, if you dont want that youll need to delete those rules from /config/workspace and /config/windowrules
-
-You can still use the other workspaces on monitor 2 by switching workspace but anything thats launched on workspace 6 will not be affected by switching workspaces on monitor 1
-
-Technically you can still move any running discord or firefox instance to another workspace but they will never initially spawn on any workspace but workspace 
+Note: I have workspace 6 fixed to my second monitor meaning that you cannot switch workspaces on that monitor at all. Essentially you have 5. Whilst workspace 6 behaves more like a seperate entity that i only use for discord and Firefox...which is why by default those 2 applications launch on workspace 6 thus only appearing on DP-2
 
 I did the same to always spawn steam on workspace 5 but that workspace behaves just like a normal workspace
 

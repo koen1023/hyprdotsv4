@@ -3,7 +3,7 @@ hl.exec_cmd("pkill waybar; waybar -c /home/koen/.config/waybar/configtop -s /hom
 hl.exec_cmd("pkill waybar; waybar -c /home/koen/.config/waybar/configbottom -s /home/koen/.config/waybar/style.css &")
 hl.exec_cmd("systemctl --user start hyprpolkitagent")
 hl.exec_cmd("hyprpaper")
-hl.exec_cmd("firefox")
+hl.exec_cmd("sh -c 'sleep 2 && firefox'", { workspace = "6 silent" })
 hl.exec_cmd("steam")
 hl.exec_cmd("dunst")
 hl.exec_cmd("discord")

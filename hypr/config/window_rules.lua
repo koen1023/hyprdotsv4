@@ -21,29 +21,9 @@ hl.window_rule({
 
 hl.window_rule({
     match = {
-        workspace = 6,
-    },
-
-    float = true,
-})
-
-hl.window_rule({
-    match = {
-        class = "firefox",
-    },
-
-    workspace = 6,
-    float = true,
-    size = { 1070, 1231 },
-})
-
-
-hl.window_rule({
-    match = {
         class = "discord"
     },
-    workspace = "6",
-    size = "1070 631",
+    workspace = "6 silent",
 })
 
 hl.window_rule({
@@ -51,7 +31,6 @@ hl.window_rule({
         class = "steam"
     },
     workspace = "5 silent",
-    monitor = "DP-1",
 })
 
 hl.window_rule({
@@ -75,6 +54,7 @@ hl.window_rule({
         class = "imv"
     },
     float = true,
+    size = "1920 1080",
 })
 
 hl.window_rule({
@@ -82,6 +62,7 @@ hl.window_rule({
         class = "mpv"
     },
     float = true,
+    size = "1920 1080",
 })
 
 
