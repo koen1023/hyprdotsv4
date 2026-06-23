@@ -4,7 +4,7 @@ local menu        = "wofi --show drun"
 local browser = "firefox"
 
 local mainMod = "SUPER"
-local mainMod1 = "SUPER + SHIFT"
+local mainMod1 = "SUPER + SPACE"
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 
 hl.bind(mainMod .. " + SHIFT + CTRL + L",hl.dsp.exec_cmd("hyprshutdown"))

@@ -68,7 +68,7 @@ Super + Return = terminal
 
 Super + 1-6 = switch workspace
 
-Super + Shift + 1-6 = move active window to workspace
+Super + Space + 1-6 = move active window to workspace
 
 Super + 'arrow keys' = move windows around in tiling
 
@@ -82,11 +82,11 @@ Super + D = pavucontrol
 
 Super + ; - / - [ - ' = move focus (hhkb arrow diamond)
 
-Super + Shift + ; - / - [ - ' = resize windows (hhkb arrow diamond)
+Super + Space + ; - / - [ - ' = resize windows (hhkb arrow diamond)
 
-Super + Shift + A - S - D = Volume down - Volume Up - Mute
+Super + Space + A - S - D = Volume down - Volume Up - Mute
 
-Super + Shift + Z - X - C = Previous - Play pause - Next
+Super + Space + Z - X - C = Previous - Play pause - Next
 
 Super + I = Screenshot ([You need a Screenshot directory in /home/"user"/Pictures/ for grim to also save your screenshot there]after taking one it is copied to your clipboard automatically)
 
@@ -94,13 +94,13 @@ Super + P = Colourpicker
 
 Super + H = Clipboard
 
-Super + Shift + CTRL + R = restart system
+Super + Space + CTRL + R = restart system
 
-Super + Shift + CTRL  + P = poweroff system
+Super + Space + CTRL  + P = poweroff system
 
-Super + Shift + CTRL  + L = log out
+Super + Space + CTRL  + L = log out
 
-Super + Shift + CTRL  + K = lock system
+Super + Space + CTRL  + K = lock system
 
 Note: The keybinds are designed after the HKKB layout, specifically the keybinds to manipulate windows
 
