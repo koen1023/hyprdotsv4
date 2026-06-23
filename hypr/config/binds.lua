@@ -1,10 +1,10 @@
-local terminal    = "kitty"
+            local terminal    = "kitty"
 local fileManager = "thunar"
 local menu        = "wofi --show drun"
 local browser = "firefox"
 
 local mainMod = "SUPER"
-local mainMod1 = "SUPER + SPACE"
+local mainMod1 = "SUPER + ALT"
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 
 hl.bind(mainMod .. " + SHIFT + CTRL + L",hl.dsp.exec_cmd("hyprshutdown"))
