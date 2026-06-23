@@ -78,7 +78,7 @@ Super + A = filemanager
 
 Super + S = wofi application launcher
 
-Super + D = hyprpwcenter
+Super + D = pavucontrol
 
 Super + ; - / - [ - ' = move focus (hhkb arrow diamond)
 
