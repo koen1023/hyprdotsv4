@@ -21,7 +21,7 @@ hl.config({
         rounding_power = 2,
 
         active_opacity   = 1.0,
-        inactive_opacity = 0.8,
+        inactive_opacity = 1.0,
 
         shadow = {
             enabled      = false,
@@ -73,22 +73,6 @@ hl.config({
     dwindle = {
         preserve_split = true, -- You probably want this
     },
-})
-
-hl.window_rule({
-    match = { class = "firefox" },
-    opacity = "1.0 override 1.0 override",
-})
-
-hl.window_rule({
-    match = { class = "discord" },
-    opacity = "1.0 override 1.0 override",
-})
-
-
-hl.window_rule({
-    match = { class = "steam" },
-    opacity = "1.0 override 1.0 override",
 })
 
 
