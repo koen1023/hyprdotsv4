@@ -48,6 +48,7 @@ hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_S
 hl.bind("XF86AudioMicMute",     hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),   { locked = true, repeating = true })
 hl.bind("XF86MonBrightnessUp",  hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"),                  { locked = true, repeating = true })
 hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"),                  { locked = true, repeating = true })
+hl.bind(mainMod .. " + m",hl.dsp.exec_cmd([=[bash -c "pactl set-source-mute @DEFAULT_SOURCE@ toggle && if [[ \$(pactl get-source-mute @DEFAULT_SOURCE@ | awk '{print \$2}') == 'yes' ]]; then notify-send 'Mic Muted' ''; else notify-send 'Mic Unmuted' ''; fi"]=]))
 
 hl.bind(mainMod1 .. " + X", hl.dsp.exec_cmd("sh -c 'playerctl play-pause'"))
 hl.bind(mainMod1 .. " + Z", hl.dsp.exec_cmd("sh -c 'playerctl previous'"))
